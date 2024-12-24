@@ -1,0 +1,102 @@
+body
+{
+	background-color:blue;
+	font-family:Verdana,Helvetica,Geneva, sans-serif;
+	font-size:12px;
+}
+#page
+{
+	background-color:#87CEEB;
+	margin-left:auto;
+	margin-right:auto;
+	width:90%;
+	padding:1%;
+	padding-bottom:520px;
+}
+/*I wanted to separate the banner from the header, so I could use the header as the title bar.*/
+.banner
+{
+	background-image:linear-gradient(to left, #1b20eb, #00ffd7);
+	text-shadow:-1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+	color:gold;
+}
+.header
+{
+	background-color:gold;
+	text-align:center;
+	margin-top:1px;
+	margin-bottom:1px;
+}
+/*This creates the mini nav bar above the main navigation structure.*/
+.miniNav
+{	
+	background-color:silver;
+	float:left;
+	width:17.7%;
+	height:4%;
+	margin-top:5px;
+	margin-bottom:5px;
+	position:absolute;
+	border:2px solid black;
+}
+.contentLeftNav
+{
+	background-color:gold;
+	float:left;
+	width:20%;
+	margin-top:95px;
+	margin-bottom:5px;
+}
+.contentMain
+{
+	margin-left:20%;
+	position:absolute;
+	width:58%;
+	background-color:#FFFFFF;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+.contentAds
+{
+	background-color:#1B88EB;
+	width:10%;
+	float:right;
+	position:relative;
+	margin-top:5px;
+	margin-bottom:5px;
+	border:3px solid gold;
+	color:gold;
+}
+/*As you can tell, I enjoy using hover effects.*/
+.contentAds:hover
+{
+	background-color:#1B20EB;
+}
+.footer
+{
+	width:92%;
+	clear:left;
+	color:lime;
+	background-color:#1B20EB;
+	font-size:80%;
+	padding-bottom:10px;
+	margin-top:2px;
+	margin-left:auto;
+	margin-right:auto;
+	border:2px solid black;
+}
+/*Personal information at footer*/
+.personalInfo
+{
+	width:92%;
+	clear:left;
+	background-color:black;
+	font-size:80%;
+	padding-bottom:10px;
+	margin-top:0px;
+	margin-left:auto;
+	margin-right:auto;
+	border:2px solid black;
+	color:gold;
+	text-align:center;
+}

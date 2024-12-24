@@ -1,0 +1,130 @@
+/*Table defaults to a width of 975px and collapsed borders*/
+	table{
+		width:975px;
+		border-collapse:collapse;
+	}
+/*Entire webpage background is colored gold*/
+/*Custom cat cursor included as well, note to self: use PNG files since they actually save transparent backgrounds.*/
+	body{
+		background-color:#00008B;
+		/*cursor: url(../images/cat-cursor.png) 32 33, auto;*/
+	}
+/*I decided to make this style rule for my entire website.
+It creates a gradient background for the banners*/
+.bannerstyle
+{
+	color:#FFD700;
+	background-image:linear-gradient(to left, #1b20eb, #00ffd7);
+	text-shadow:-1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+}
+/*I copied this over from my cssdemo file to make most of the webpages centered by using the whitespace to focus attention on the content.*/
+#mainspace
+{
+	background-color:gold;
+	width:975px;
+	margin-left:auto;
+	margin-right:auto;
+}
+/*This will be used to specify text font instead of using the default browser font. For better readability, I will use san-serif fonts.*/
+span.contenttext
+{
+	font-family:sans-serif;
+}
+/*I made this to adjust the background images I set up for the text page turners in their cells.
+The items should be aligned in the center with an image that fits 100% to both width and height to the cell without repeating itself.*/
+	.textturner{
+		text-align:center; 
+		vertical-align:center;  
+		background-repeat:no-repeat; 
+		background-size: 100% 100%;
+	}
+/*Style rule that I've made for the navigation icons in the table cells.
+The table cells change background color whenever the user hovers their cursor over them.*/
+	td.navicon{
+		background-color:silver; 
+		margin:5px;
+	}
+	td.navicon:hover{
+		background-color:#1B20FF;
+		margin:5px;
+	}
+/*All hyperlinks are defaulted to a cyan blue color with underlines that appear when hovered over unless other rules take precedence.
+This hyperlink rule is mainly used for the SITE LINKS at the footer of each page*/
+	a{
+		color:gold;
+		text-decoration:none;
+	}
+/*Distinguishes text links from navigation links*/
+	a.text
+	{
+		font-weight:bold;
+		color:#1B20FF;
+	}
+	a:hover{
+		color:#F0FFFF;
+		text-decoration:underline;
+	}
+/*This stylizes the mainnav structure and nothing else.
+It is a descendant selector that affects hyperlink elements within list items of the targetted unordered list.
+This should take precedence over the bottommost style rule due to its specificity. 
+Each list item will be in a stylized block with their own font family different to the text.*/
+	ul#mainnav li a{
+		font-weight:bold;
+		font-size:150%;
+		display:block;
+		border:2px solid #1B20FF;
+		background-color:silver;
+		color:brown;
+		font-family:Helvetica,Geneva,Verdana,sans-serif;
+		padding:10px;
+		margin:10px;
+		text-decoration:none;
+		text-align:center;
+	}
+/*Main nav hyperlinks should change to the specified background color whenever the mouse hovers over them.*/
+	ul#mainnav a:hover
+	{
+		font-weight:bold;
+		background-color:#1B20FF;
+		color:gold;
+	}
+/*This was made to keep list centered in table cell while keeping the list items aligned to the left for the footer nav structure.*/
+	ul#footernav{
+		display:table;
+		margin-top:0px;
+		margin-bottom:0px;
+		margin-right:auto;
+		margin-left:auto;
+	}
+/*This is for icons made within divs instead of table cells. I copied these rules over from the art gallery webpage.*/
+	.icon
+	{
+		width:70px;
+		height:70px;
+		margin:0px;
+		border-collapse:collapse;
+		border:0px;
+		float:left;
+		background-color:silver;
+	}
+	.icon:hover
+	{
+		background-color:#1B20FF;
+	}
+/*This animation rule set makes it so that a cat png runs back and forth on the bottom of the color pages.
+This affects the div that the image is in while specifying the animation parameters.*/	
+	#movingcat{
+		z-index:1;
+		position:absolute;
+		animation-name: backAndForth;
+		animation-timing-function: linear;
+		animation-duration:6s;
+		animation-iteration-count:infinite;
+	}
+/*My custom animation which will make the affected item flip every time it reaches the pixel location
+ going back and forth for all eternity.*/
+	@keyframes backAndForth{
+		0% {left:5px;}
+		50%{left:780px; transform:rotateY(180deg);}
+		100%{left:5px; transform:rotateY(360deg);}
+	}

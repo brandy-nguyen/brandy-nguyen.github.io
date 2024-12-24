@@ -1,0 +1,148 @@
+/*Form is organized in tables*/
+table
+{
+	width:670px;
+}
+td
+{
+	padding-top:15px;
+	line-height:20px;
+	padding-bottom:20px;
+}
+			
+/*This style adds a red, round outline around the invalid input with an ivory background color.
+So far, the name fields are the only fields required and they are technically already invalid because of the pattern.
+This should grab the attention of the user and making it appear urgent and mandatory to complete.*/
+input:invalid
+{
+	background-color: ivory;
+	outline: 2px solid red;
+	border-radius: 5px;
+	border:none;
+
+}
+
+/*The legend should appear distinct from the field names which is why I purposely used different font families.
+  Additionally, I increased the font size, letter spacing, used the bolder font weight, and use small-caps variant.*/
+legend
+{
+	font-variant:small-caps;
+	font-size:125%;
+	letter-spacing:3px;
+	font-family: Georgia, serif;
+	font-weight:bolder;
+}
+
+/*Form Title*/
+#surveytitle
+{
+	font-size:500%;
+	font-family:Playfair Display, "Times New Roman", Times, serif; 
+	text-decoration:underline;
+	letter-spacing:5px;
+	margin-top:40px;
+	margin-bottom:10px;
+}
+
+/*This style rule is one of my attempts at making my form more accessible.
+  I made the button incredibly large in both size and font.
+  The purple and gold is to keep the color scheme consistent while making it stand out from the other fields.
+  I intentionally made the cursor turn into the pointer when hovering over the button to make it clear that it is clickable.*/
+#introalert
+{
+	height:70px;
+	width:550px;
+	font-size:230%;
+	font-weight:bold;
+	background-color:gold;
+	color:#6600FF;
+	border:5px solid blue;
+	cursor:pointer;
+}
+#introalert:hover
+{
+	border-color:purple;
+	color:purple;
+}
+
+/*Stylizing the options from the select list to make it easier to distinguish group options from each other.*/
+#Fish
+{
+	background-color:#6699FF;
+}
+#Fish option
+{
+	background-color:#CCFFFF;
+}
+#Amphibians
+{
+	background-color:#33CC66;
+}
+#Amphibians option
+{
+	background-color:#99FF33;
+}
+#Reptiles
+{
+	background-color:#996600;
+}
+#Reptiles option
+{
+	background-color:#CC9933;
+}
+#Mammals
+{
+	background-color:#ff99ff;
+}
+#Mammals option
+{
+	background-color:#ffccff;
+}
+#Birds
+{
+	background-color:#ffff33;
+}
+#Birds option
+{
+	background-color:#ffffcc;
+}
+/*I need to use a color scheme that makes these buttons different from each other, so that the user doesn't mistake them for each other.
+  For this purpose, I will avoid using red and green simlutaneously since it would be a great hazard for someone who is colorblind.
+  I decided to use blue and red for their high contrast as well as the fact that red is associated with items to be used with caution.
+  I will put an event for users to confirm their decision if they want to click on one of these buttons later in the code.*/
+#submit
+{
+	font-weight:bold;
+	height:60px;
+	width:250px;
+	margin-right:50px;
+	font-size:300%;
+	cursor:pointer;
+	background-color:blue;
+	color:gold;
+	border:3px solid gold;
+}
+#submit:hover
+{
+	background-color:gold;
+	color:#0033FF;
+	border-color:#0033FF;
+}
+#reset
+{
+	font-weight:bold;
+	height:60px;
+	width:250px;
+	margin-left:50px;
+	font-size:300%;
+	cursor:pointer;
+	background-color:red;
+	color:white;
+	border:3px solid gold;
+}
+#reset:hover
+{
+	color:crimson;
+	background-color:gold;
+	border-color:crimson;
+}

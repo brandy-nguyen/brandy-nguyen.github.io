@@ -1,0 +1,87 @@
+p
+{
+	text-indent:2em;
+	text-align:justify;
+	line-height:125%;
+}
+/*The headings will be slightly angled downwards towards the left.
+I plan on coloring each word of the headings in their own color.
+The font will be monospace and in small-caps.*/
+h2.demoheading
+{
+	transform:rotate(-2.5deg);
+	font-family:monospace;
+	font-variant:small-caps;
+	font-size:2em;
+	text-decoration:underline;
+}
+/*This should create a gradient background for the span that will have my name.
+The color changes from dark blue at the top left to cyan at the bottom left.
+The background color is dark blue by default if gradient isn't supported.*/
+.gradienteffect
+{
+	color:gold;
+	/*I put in text shadow to make it easier to distinguish the text here from the webpage background.*/
+	text-shadow:-1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+	font-weight:bold;
+	/*Trying to use relative units to enhance viewing experience on screens.*/
+	font-size:110%;
+	font-family:Verdana, sans-serif;
+	background-color:#1B20EB;
+	background-image:linear-gradient(to bottom right, #1B20EB, #00ffd7);
+}
+#banner
+{
+	width:975px;
+	height:170px;
+	position:absolute;
+}
+#navbar
+{
+	width:972px;
+	margin-left:-1px;
+	height:70px;
+	margin-top:180px;
+	position:absolute;
+	border:2px solid black;
+}
+/*I prefer to use sticky position because it acts like a navigation bar with z-index except staying relative to whenever you scroll instead of being static.*/
+#mainnavigation
+{
+	width:300px;
+	height:400px;
+	margin-top:260px;
+	margin-left:-10px;
+	position:sticky;
+	top:1%;
+	float:left;
+}
+#content
+{
+	width:675px;
+	height:500px;
+	margin-top:265px;
+	margin-left:300px;
+	position:absolute;
+}
+#footer
+{
+	width:965px;
+	height:250px;
+	margin-top:2100px;
+	position:absolute;
+	background-color:#1B20EB;
+	border:5px solid black;
+	font-family:sans-serif;
+}
+#personalinfo
+{
+	width:975px;
+	height:55px;
+	margin-top:2360px;
+	position:absolute;
+	text-align:center;
+	background-color:black;
+	color:gold;
+	font-family:sans-serif;
+}

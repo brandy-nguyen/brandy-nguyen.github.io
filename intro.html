@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" >
+	<head>
+	<title>Hello, World - my name is Brandy Nguyen</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+	<!--Fav Icon-->
+	<link rel="icon" href="images/favicon.ico">
+	<!--Link to external style sheet here-->
+	<link rel="stylesheet" href="css/mystylesheet.css" type="text/css">
+	<!--Google Fonts-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script&text=BRANDY%20NGUYEN">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gentium+Book+Plus&text=Life%20doesn%27t%20give%20us%20a%20perfect%20start%20%82%20but%20it%20is%20our%20own%20choice%20to%20make%20our%20imperfections%20into%20something%20worth%20more%20than%20gold">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&text=BLACK%20CRIMSON%20GOLD">
+	<!--External JavaScript: Cookie-->
+	<script src="js/cookies.js"></script>
+	<style>
+		/*I'm trying to make the definition list easier to read by spacing out the rows and changing their fonts accordingly.*/
+		dt{
+			font-weight:bold;
+			font-size:125%;
+			font-variant:small-caps;
+			font-family: 'Times New Roman', serif;
+			line-height:2em;
+			text-decoration:underline;
+		}
+		dd
+		{
+			line-height:1.25em;
+		}
+	</style>
+	</head>
+	<body onload="checkCookie()">
+		<!--BANNER-->
+		<div id="mainspace">
+		<table id="banner" class="bannerstyle" style="background-color:#1B20EB;">
+			<tr>
+				<td style="padding:10px; padding-bottom:0px; margin:0px;">
+					<!--Name and Motto-->
+					<p style="text-align:center;">
+					<span style="font-size:465%; font-weight:bold; font-family:Dancing Script, Arial, sans-serif; letter-spacing:25px; ">
+					B<span style="color:#cedf33; font-size:70%;">R</span><span style="color:#a2e633; font-size:70%">A</span><span style="color:#7cec66; font-size:70%">N</span><span style="color:#54f299; font-size:70%">D</span><span style="color:#29f9cc; font-size:70%">Y</span>
+					N<span style="color:#91df33; font-size:70%;">G</span><span style="color:#4fdc66; font-size:70%">U</span><span style="color:#00cfcc; font-size:70%">Y</span><span style="color:#00c6cc; font-size:70%">E</span><span style="color:#0b9fff; font-size:70%;">N</span></span>
+					<span style="font-size:170%; font-family:Gentium Book Plus, Georgia,serif;">
+					<br/><i>Life doesn&apos;t give us a perfect start, but it is our own choice to make our imperfections into something worth more than gold.</i></span>
+					</p>
+				</td>
+				<td style="vertical-align:bottom; padding:0px;">
+					<!--Banner Image-->
+					<img src="images/banner-cat-CURRENT.jpg"
+					alt="A grey tabby cat narrows its eye at the left side of the screen. 
+					It has sleek grey fur that has symmetrical dark stripes around its dark yellowish eyes.
+					The background is dark blue while small glowing orbs of green-yellow light surround the cat."/>
+				</td>
+			</tr>
+		</table>
+		<!--NAVIGATION BAR-->
+		<table id="navbar" style="display:block; border:4px solid black;">
+			<tr>
+				<!--Sitemap & Page Turner-->
+				<td class="navicon">
+					<a href="sitemap.html">
+					<img src="images/map_icon_mod.png" alt="A small black map that is folded up with a round pin inserted on top of it
+					that sends the user to the sitemap web page when this icon is clicked." 
+					style="width:70px; height:70px;"/></a>
+				</td>
+				<td class="navicon">
+					<a href="black.html" style="border:0px;"><img src="images/forward_arrow_mod.png" alt="A thin, black arrow pointing towards the right side of the screen that sends the user back to the black webpage when clicked." 
+					style="width:70px; height:70px;"/></a>
+				</td>
+				<!--Title of webpage is implemented in this table cell-->
+				<td style="padding-left:15px; background-color:#FFD700; text-align:center;">
+					<h1><span class="contenttext">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&quot;About Me&quot;</span></h1>
+				</td>
+			</tr>
+		</table>
+		<br/>
+		<!--MAIN NAV-->
+		<!--I am using both the top and sticky position properties to have a scrolling nav bar that stays on top of the screen without covering the footer.-->
+		<table id="navigation" style="float:left; margin-left:-10px; width:320px; top:5%; position:sticky;">
+			<tr>
+				<td>
+					<!--This list should float on the left with the elements in vertical order-->
+					<ul id="mainnav" style="margin:0px; padding:0px; list-style:none;">
+						<!--Intro-->
+						<li><a href="intro.html">Intro</a></li>
+						<!--Color Chart-->
+						<li><a href="colorchart.html">Color Chart</a></li>
+						<!--Three Favorite Colors in alphabetical order-->
+						<li><a href="black.html">Black &gt; My First Favorite Color</a></li>
+						<li><a href="crimson.html">Crimson &gt; My Third Favorite Color</a></li>
+						<li><a href="gold.html">Gold &gt; My Second Favorite Color</a></li>
+						<!--Image Map-->
+						<li><a href="imagemap.html">Image Map</a></li>
+						<!--Sitemap-->
+						<li><a href="sitemap.html">Sitemap</a></li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+		<!--CONTENT-->
+		<table id="content" style="width:655px; margin-left:315px;">
+			<tr>
+				<td>
+					<!-- Information visible in the browser window -->
+					<!--I put a picture of myself so people would be able to identify me. I need to work on editting images.-->
+					<img src="images/brandy-mod.png" alt="A tan Vietnamese man whose head, neck, and shoulders are visible is staring intently at the camera. 
+					He has black hair that slightly glistens in the light of the gray wallpaper in the background. He has a shaggy bowl haircut that's slightly combed to his right.
+					He happens to be wearing a grey, wrinkled shirt and his name is Brandy Nguyen." style="width:255px; height:305px; float:left; margin-right:20px;">
+					<!-- Educational background information -->
+					<p>	
+						<span class="contenttext">
+						<b>I am currently a Junior at NEIU and I am majoring in Computer Science in which my concentration is Information Technology.</b> I transferred here last year after earning my Associate's Degree from Wilbur Wright Community College.
+						I chose to take Client-Side Web Development because Professor Porps said that <b><q>this project will be useful in our portfolio to show off our skills to future employers.</q></b>
+						&nbsp;<br/>&nbsp;<br/>After being reintroduced to HTML briefly in my previous Object-Oriented Programming course, <b>I wanted to learn more about how web development works in the modern world.</b>
+						In all honesty, <b>I'm already having fun just from creating this webpage from scratch.</b>&nbsp;<br/>	
+						</span>
+					</p>		
+					<!-- Personal background information -->
+					<p>
+						<span class="contenttext">
+						<b>I enjoy playing video games</b> such as the infamous Dark Souls trilogy which offers <b>a good challenge to those who yearn to persist and adapt.</b>
+						I like to play other types of games like <b>visual novels</b>, <b>card games</b>, <b>first-person shooters</b>, <b>roguelites</b>, <b>role-playing games</b>, or even <b>beat &apos;em ups</b>.
+						<b>I've also been reviewing games as part of a curator group on Steam for the sole purpose of saving your wallets.</b>
+						&nbsp;<br/>&nbsp;<br/><b>I've recently started to draw as another hobby</b> to let my imagination loose or when the internet service goes down from time to time.
+						My goal in drawing is to finally be able to illustrate a perfectly proportional hand and I continue to strive for it despite my imperfection.
+						&nbsp;<br/>&nbsp;<br/>There's a quote that I hold dear to my heart from reading Viktor Frankl&apos;s <i>Man's Search for Meaning</i>:
+						</span>
+					</p>
+					<!-- Blockquote lets me quote Viktor and indent it so that it's easily visible to you relative to the paragraph about myself -->
+						<blockquote><span class="contenttext"><b>&quot;<i>Everything can be taken from a man but one thing: the last of the human freedoms&#8212;
+						to choose one's attitude in any given set of circumstances, to choose one&apos;s own way</i>&quot;</b></span></blockquote>	
+					<p>
+						<span class="contenttext">
+						I personally interpret this quote as saying that <b>we ultimately decide how we deal with adversity even at our lowest</b>.
+						I remind myself of this quote to remain optimistic and I hope that you learned at least something from this webpage of mine.
+						</span>
+					</p>	
+					<!-- Unordered List of Five Words Describing Me -->
+					<h2><span class="contenttext">Five Words That Best Describe Me</span></h2>
+					<!-- Implemented a list style attribute to each unordered list element -->
+					<ul style="font-family:arial,sans-serif;">
+						<li style="list-style-type: circle;">WITTY</li>
+						<li style="list-style-type: circle;">DUTIFUL</li>
+						<li style="list-style-type: circle;">COURTEOUS</li>
+						<li style="list-style-type: circle;">TRUSTWORTHY</li>
+						<li style="list-style-type: circle;">ADVENTUROUS</li>
+					</ul>
+					<!-- Ordered List of My Top Ten Favorite Colors -->
+					<h2><span class="contenttext">My Top Ten Favorite Colors</span></h2>
+					<!-- Saving hexadecimal color codes for reference because I plan to change the color of each list item individually -->
+					<ol style="font-family:trebuchet,sans-serif;">
+					<!--Top three colors will be contextual RELATIVE links that lead to their respective color webpages.
+					I also changed the default blue color for the links to their respective colors. I made them more noticeable by changing their font to Roboto and increasing their font size/boldness-->
+						<li style="color:#000000">
+						<a href="black.html" style="color:#000000"><span style="font-family:Roboto, sans-serif; font-weight:bold; font-size:120%;">BLACK</span></a>
+						</li> <!--#000000--> 
+					<!--Adding a text border around the text to make the word visisble against the golden background.-->
+						<li style="color:#FFD700; text-shadow:-1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;">
+						<a href="gold.html" style="color:#FFD700; text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;"><span style="font-family:Roboto, sans-serif; font-weight:bold; font-size:120%;">GOLD</span></a>
+						</li> <!--#FFD700-->
+						<li style="color:#DC143C">
+						<a href="crimson.html" style="color:#DC143C"><span style="font-family:Roboto, sans-serif; font-weight:bold; font-size:120%;">CRIMSON</span></a>
+						</li> <!--#DC143C-->
+						<li style="color:#2F4F4F">DARK SLATE GRAY</li> <!--#2F4F4F-->
+						<li style="color:#7FFFD4">AQUAMARINE</li> <!--#7FFFD4-->
+						<li style="color:#00FFFF">CYAN</li> <!--#00FFFF-->
+						<li style="color:#C0C0C0">SILVER</li> <!--#C0C0C0-->
+						<li style="color:#00BFFF">DEEP SKY BLUE</li> <!--#00BFFF-->
+						<li style="color:#FF1493">DEEP PINK</li> <!--#FF1493-->
+						<li style="color:#191970">MIDNIGHT BLUE</li> <!--#191970-->
+					</ol>
+					<!-- Definition List of Five HTML-Related Terms -->
+					<h2><span class="contenttext">Five Interesting HTML-Related Terms</span></h2>
+					<dl>
+						<dt>SaaS</dt>
+							<dd><span class="contenttext">It is an acronym for <b>Software as a Service</b>. This means that the Software is acquired via a subscription instead of being purchased as a product.
+							<br/>Hence, <b>the software is offered as a service</b> that a customer uses with the benefit of <b>continual updates and availability over the Web</b>.</span></dd>
+						<dt>Semantic Markup</dt>
+							<dd><span class="contenttext">It refers to the importance of <b>structuring a document in a way in which all of its content is organized meaningfully</b>.
+							<br/>The document is made deliberately to let its target audience <b>understand it with utmost certainty</b> and be able to <b>utilize it with ease</b>.</span></dd>
+						<dt>Responsive Design</dt>
+							<dd><span class="contenttext">It is <b>a design approach that seeks to make web pages adapt to the devices that are currently displaying them</b>.
+							<br/>For example, a web page would retain the same resolution on a mobile smartphone as on a desktop.</span></dd>
+						<dt>URL</dt>
+							<dd><span class="contenttext">It stands for <b>Uniform Resource Locator</b> which is also known as a &quot;web address&quot; to many web users.
+							<br/>It is <b>used for directing browsers to a specific web page</b> whenever the user types in the valid web address.</span></dd>
+						<dt>W3C</dt>
+							<dd><span class="contenttext">The W3C is called the <b>World Wide Web Consortium</b> and it is responsible for <b>setting standards to promote the web's growth</b>.</span></dd>
+					</dl>
+					<!--Special GIF I Made To Thank You All-->
+					<h1 style="text-align:center; color:#1b20ff"><span class="contenttext">Thank You For Visiting&excl;</span></h1>
+					<div style="text-align:center;">
+					<img src="images/thankyou.gif" title="Thank You For Visiting"
+					alt="A poorly drawn boy has a gelatinous body and stubby arms. He has a round, black haircut that is shaped like a bowl while he only has a half circle with a black pupil in it for an eye.
+					Throughout the animation, he says that he thanks the user for visiting the website and he hopes that the user will enjoy their experience.
+					Near the end of the animation, the doodle is drawn with more details such as having more jagged hair, a thick neck, and an open smile showing rows of teeth.
+					The final frame transforms the boy into having a red eye and sharp fangs protruding from his mouth while long, jagged branches erupt from his shoulder and hair."/>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<br/>
+		<!--FOOTER-->
+		<table id="footer" style="color:#FFD700; background-color:#1B20EB; border-spacing:0px; border:5px solid black; font-family:Verdana;">
+			<tr>
+				<!--PREVIOUS PAGE TURNER-->
+				<td class="textturner" style="background-image:url(images/footer-prev-arrow-mod.png);">
+					<a href="sitemap.html" style="font-size:150%;"><b>SITE MAP</b></a>
+				</td>
+				<td>
+					<!--Secondary navigation structure-->
+					<h2 style="text-align:center;">Site Links</h2>
+					<ul id="footernav" style="list-style-type:square; margin-bottom:10px; font-size:120%;">
+						<li><a href="black.html">Black &gt; My First Favorite Color</a></li>
+						<li><a href="colorchart.html">Color Chart</a></li>
+						<li><a href="crimson.html">Crimson &gt; My Third Favorite Color</a></li>
+						<li><a href="gold.html">Gold &gt; My Second Favorite Color</a></li>
+						<li><a href="intro.html">Intro</a></li>
+						<li><a href="imagemap.html">Image Map</a></li>
+						<li><a href="sitemap.html">Sitemap</a></li>
+					</ul>
+				</td>
+				<!--NEXT PAGE TURNER-->
+				<td class="textturner" style="background-image:url(images/footer-next-arrow-mod.png);">
+					<a href="black.html" style="font-size:150%;"><b>NEXT PAGE</b></a>
+				</td>
+			</tr>
+			<!--Developer Information-->
+			<tr style="background-color:black;">
+				<td colspan="3" style="text-align:center; padding-top:5px;">
+					<strong>Brandy Nguyen
+					<br/>bnguyen11&#64;neiu.edu</strong>
+					<br/>CS300 Spring 2023
+				</td>
+			</tr>
+		</table>
+		</div>
+	</body>
+</html>
