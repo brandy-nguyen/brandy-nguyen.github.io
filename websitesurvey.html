@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Website Survey</title>
+		<!--Fav Icon-->
+		<link rel="icon" href="images/favicon.ico">
+		<!--External CSS Sheet #1:General Aesthetics-->
+		<link rel="stylesheet" href="css/mystylesheet.css" type="text/css">
+		<!--External CSS Sheet #2:Page Layout-->
+		<link rel="stylesheet" href="css/cssdemo.css" type="text/css">
+		<!--External CSS Sheet#3:Form Layout-->
+		<link rel="stylesheet" href="css/formsurvey.css" type="text/css">
+		<!--External CSS Sheet #4-5:Google Fonts-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script&text=BRANDY%20NGUYEN">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gentium+Book+Plus&text=Life%20doesn%27t%20give%20us%20a%20perfect%20start%20%82%20but%20it%20is%20our%20own%20choice%20to%20make%20our%20imperfections%20into%20something%20worth%20more%20than%20gold">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display&text=WEBSITE%20SURVEY" type="text/css">
+		<!--This JavaScript is meant to validate the birthdate form field.
+			The function should only accept dates that are before or at the present date received from the user's computer.
+			No future dates are allowed unless the user is some time-traveling wizard.-->
+		<script>
+			function validateBirthDate(){
+				const currDate = new Date();
+				var birthdate = new Date(document.getElementById('birthdate').value);
+				if(birthdate > currDate)
+				{
+					alert('I doubt that you are a time-traveling wizard from the future.\nPlease enter a date that is at or before the current date.');
+					return false;
+				}
+			}
+		</script>
+	</head>
+	<!--Adding an introduction that appears when the page loads, I also will add an event for when the page is about to be unloaded to remind users to submit their forms.-->
+	<body onload="javascript:alert('Hello, this form is created to showcase my ability to create forms in HTML. It is also a good chance to apply my knowledge gained from my Human-Computers Interaction course.\n\nThe questions in here are made to get a general understanding of my audience and use that feedback in my website.\n\nOverall, I want this form to represent my drive to improve the user experience and accessibility. I hope you all can enjoy this!')" 
+		  onbeforeunload="return 'Please submit the form, otherwise any unsaved data will be gone.'">
+	<!--Needed to specify height for div in order to make background color show and for the sticky position to work.-->
+	<div id="mainspace" style="height:1900px; width:978px;">
+		<!--BANNER-->
+		<div id="banner" class="bannerstyle">
+			<p style="text-align:center; color:#FFD700;">
+				<img src="images/banner-cat-CURRENT.jpg" style="float:right;"
+				alt="A grey tabby cat narrows its eye at the left side of the screen. 
+				It has sleek grey fur that has symmetrical dark stripes around its dark yellowish eyes.
+				The background is dark blue while small glowing orbs of green-yellow light surround the cat."/>
+				<!--Styling Name in Banner: Increased letter & word spacing; manual fade-in effects;-->
+				<span style="font-size:465%; font-weight:bold; font-family:Dancing Script, Arial, sans-serif; letter-spacing:25px; ">
+				<br/>B<span style="color:#cedf33; font-size:70%;">R</span><span style="color:#a2e633; font-size:70%">A</span><span style="color:#7cec66; font-size:70%">N</span><span style="color:#54f299; font-size:70%">D</span><span style="color:#29f9cc; font-size:70%">Y</span>
+				N<span style="color:#91df33; font-size:70%;">G</span><span style="color:#4fdc66; font-size:70%">U</span><span style="color:#00cfcc; font-size:70%">Y</span><span style="color:#00c6cc; font-size:70%">E</span><span style="color:#0b9fff; font-size:70%;">N</span>
+				</span>
+				<span style="font-size:170%; font-family:Gentium Book Plus, Georgia,serif;">
+				<br/><br/><i>Life doesn&apos;t give us a perfect start, but it is our own choice to make our imperfections into something worth more than gold.</i>
+				</span>
+			</p>
+		</div>
+		<!--NAVBAR-->
+		<div id="navbar">
+			<!--BACK ARROW-->
+			<a href="coursereflection.html" style="border:0px;"><img class="icon" src="images/back_arrow_mod.png" alt="A thin, black arrow pointing towards the left side of the screen that sends the user to the course reflection webpage when clicked."/></a>
+			<!--HOME PAGE-->
+			<a href="intro.html" style="border:0px;"><img class="icon" src="images/home_button_mod.png" alt="A small black house with a chimmey on the top of the roof that send the user to the introduction web page whenever the user clicks on this icon."/></a>
+			<!--SITE MAP-->
+			<a href="sitemap.html" style="border:0px;"><img class="icon" src="images/map_icon_mod.png" alt="A small black map that is folded up with a round pin inserted on top of it that sends the user to the sitemap web page when this icon is clicked."/></a>
+			<!--FORWARD ARROW-->
+			<a href="imagemap.html" style="border:0px;"><img class="icon" src="images/forward_arrow_mod.png" alt="A thin, black arrow pointing towards the right side of the screen that sends the user to the image map webpage when clicked."/></a>
+			<h1><span class="contenttext">&nbsp;&nbsp;Website Survey</span></h1>
+		</div>
+		<!--MAINNAV-->
+		<!--I slightly changed the name because only one instance of the named id can be used.-->
+		<div id="mainnavigation">
+			<ul id="mainnav" style="margin:0px; padding:0px; list-style:none; font-size:85%;">
+				<!--Intro-->
+				<li><a href="intro.html">Intro</a></li>
+				<!--Color Chart-->
+				<li><a href="colorchart.html">Color Chart</a></li>
+				<!--Three Favorite Colors in alphabetical order-->
+				<li><a href="black.html">Black &gt; My First Favorite Color</a></li>
+				<li><a href="crimson.html">Crimson &gt; My Third Favorite Color</a></li>
+				<li><a href="gold.html">Gold &gt; My Second Favorite Color</a></li>
+				<!--Image Map-->
+				<li><a href="imagemap.html">Image Map</a></li>
+				<!--Sitemap-->
+				<li><a href="sitemap.html">Sitemap</a></li>
+			</ul>
+		</div>
+		<!--CONTENT-->
+		<div id="content" style="border:3px solid black; height:1550px; margin-left:286px; padding:5px; background-color:#6633ff; color:gold;">
+			<!--FORM-->
+			<!--I have left the action and method attributes blank because because I do not have a destination URL for which the form data will be sent.
+				Hence, it is why there is no URL specified nor is a method needed in the form currently. I am aware that this form will not validate because of the empty attributes.-->
+			<!--On submit, it should activate the javascript function that checks for a valid birthdate and should cancel submission if the field is invalid-->
+			<form name="BrandyNguyen" action="" method="" onsubmit="return validateBirthDate()">
+				<table>
+					<!--Form Title: Use Your Name...Okay I Will-->
+					<tr>
+						<td style="text-align:center;">
+							<!--Firefox does not like using small-caps so I had to use span to manually make it legible on both Chrome and Firefox.-->
+							<h3 id="surveytitle">W<span style="font-size:75%;">EBSITE</span> S<span style="font-size:75%;">URVEY</span></h3>
+							<!--Adding NoScript in the event that the user does not have Javascripts enabled.-->
+							<div style="text-align:left;">
+							<noscript>
+							<br/><br/>Hello, this form is created to showcase my ability to create forms in HTML.
+							<br/>It is also a good chance to apply my knowledge gained from my Human-Computers Interaction course.
+							<br/>The questions in here are made to get a general understanding of my audience and use that feedback in my website.
+							<br/><br/>Overall, I want this form to represent my drive to improve the user experience and accessibility.<br/>
+							I hope you all can enjoy this&excl; <b>Remember to enable JavaScript to get the full experience.</b>
+							</noscript>
+							</div>
+						</td>
+					</tr>
+					<!--Introduction-->
+					<tr>
+						<td>
+						<fieldset>
+						<legend>Read First</legend>
+						<!--This button is designed to relaunch the javascript alert if the user ever wants to see it again.
+							I prefer this over writing in the page because the alert appears upon loading in the survery form.
+							This means that the introduction alert should be the first thing the user had to see before anything else.-->
+						<div style="text-align:center;">
+						<input type="button" id="introalert" value="Relaunch Introduction" 
+						onclick="javascript:alert('Hello, this form is created to showcase my ability to create forms in HTML. It is also a good chance to apply my knowledge gained from my Human-Computers Interaction course.\n\nThe questions in here are made to get a general understanding of my audience and use that feedback in my website.\n\nOverall, I want this form to represent my drive to improve the user experience and accessibility. I hope you all can enjoy this!')"/>
+						</div>
+						<span class="contenttext"><br/>Input fields marked with &#40;<b>&#42;</b>&#41; are <b>required</b>.
+						<br/>Don&apos;t forget to <b>submit the form before leaving</b> and have a nice day&excl;</span>
+						</fieldset>
+						</td>
+					</tr>
+				</table>
+				<!--TEXT INPUT FIELDS: REQUIRED-->
+				<table>
+					<tr>
+						<!--I finally got the regex to work. Note to self: only a few special characters can be escaped.
+							The regex pattern is supposed to ensure that the names start with an Uppercase letter.
+							Next, at least one letter, Apostrophe, or Hyphen is needed to validate the user's input.
+							Even though I got this regex to work, it can still fail to check some names and creating a regex for names is incredibly difficult.
+							This is needed to make sure that valid information is entered by the user.-->
+						<td style="padding-left:5px;">
+							<fieldset>
+							<legend>Personal Info</legend>
+							<!--Full Name-->
+							<span class="contenttext"><b>First Name&#42;&nbsp;</b></span>
+							<input type="text" name="firstname" size="60" maxlength="60" placeholder="At least 2 letters, must start with an uppercase letter, no digits allowed." pattern="^[A-Z][A-Za-z'-]+$" title="Enter at least two alphabetical characters (A-Z, ', -) beginning with an UPPERCASE letter. Digits(0-9) not allowed." oninvalid="setCustomValidity('You must enter at least two alphabetical characters \(A\-Z\, \'\, \-\) beginning with an Uppercase Letter.')" required><br/><br/>
+							<span class="contenttext"><b>Last Name&#42;&nbsp;</b></span>
+							<input type="text" name="lastname" size="60" maxlength="60" placeholder="At least 2 letters, must start with an uppercase letter, no digits allowed." pattern="^[A-Z][A-Za-z'-]+$" title="Enter at least two alphabetical characters (A-Z, ', -) beginning with an UPPERCASE Letter. Digits(0-9) not allowed." oninvalid="setCustomValidity('You must enter at least two alphabetical characters \(A\-Z\, \'\, \-\) beginning with an Uppercase Letter.')" required><br/><br/>
+							<!--Date of Birth: My honest attempt at making a JavaScript validate a form field, though I would prefer to not use it.-->
+							<!--This should detect whenever the user has inputted new data in the field. Basically as long as the date is not in the future, it should pass.-->
+							<span class="contenttext"><b>Date of Birth&#42;&nbsp;</b></span>
+							<input type="date" name="birthdate" id="birthdate" required>
+							</fieldset>
+						</td>
+					</tr>
+				</table>
+				<!--MUTUAL EXCLUSIVE INPUT-->
+				<table>
+					<tr>
+						<td>
+							<fieldset>
+							<legend>Student Info</legend>
+							<span class="contenttext"><b>Did you attend classes at <u>Northeastern Illinois University</u>&quest;</b></span><br/>
+							<input type="radio" name="NEIUstudent" value="Yes" checked="checked" title="YES, I did attend classes at NEIU."/><span class="contenttext"><b>Yes</b>, I did attend classes at NEIU.</span><br/>
+							<input type="radio" name="NEIUstudent" value="No" title="NO, I did NOT attend classes at NEIU."/><span class="contenttext"><b>No</b>, I did NOT attend classes at NEIU.</span>
+							</fieldset>
+						</td>
+					</tr>
+				</table>
+				<!--CHECKBOX INPUTS-->
+				<table>
+					<tr>
+						<td>
+							<fieldset>
+							<legend>Happiness Goals</legend>
+							<span class="contenttext"><b>Which of the following is absolutely necessary to feel <u>content</u>&quest; Select all that apply.</b></span><br/>
+							<input type="checkbox" name="necessities" value="Shelter"/><span class="contenttext">Personal Shelter</span>
+							<input type="checkbox" name="necessities" value="Pet"/><span class="contenttext">Animal Pet</span>
+							<input type="checkbox" name="necessities" value="Partner"/><span class="contenttext">Loving Partner</span>
+							<input type="checkbox" name="necessities" value="Faith"/><span class="contenttext">Religion &amp; Beliefs</span>
+							<input type="checkbox" name="necessities" value="Money"/><span class="contenttext">Money</span><br/>
+							<input type="checkbox" name="necessities" value="Children"/><span class="contenttext">Children</span>
+							<input type="checkbox" name="necessities" value="Innovation"/><span class="contenttext">Inventing Something New</span>
+							<input type="checkbox" name="necessities" value="Time"/><span class="contenttext">Free Leisure Time</span>
+							<input type="checkbox" name="necessities" value="Independence"/><span class="contenttext">Independence</span><br/>
+							<input type="checkbox" name="necessities" value="Technology"/><span class="contenttext">Technology</span>
+							<input type="checkbox" name="necessities" value="Academics"/><span class="contenttext">Academic Success</span>
+							<input type="checkbox" name="necessities" value="Health"/><span class="contenttext">Physical &amp; Mental Health</span>
+							<input type="checkbox" name="necessities" value="Hobby"/><span class="contenttext">Mastering A Hobby</span><br/>
+							<input type="checkbox" name="necessities" value="IDK"/><span class="contenttext">I Don&apos;t Know</span>
+							<input type="checkbox" name="necessities" value="Other" checked="checked"/><span class="contenttext">Other</span>
+							</fieldset>
+						</td>
+					</tr>
+				</table>
+				<!--SELECT LIST INPUT-->
+				<table>
+					<tr>
+						<td>
+							<fieldset>
+							<legend>Favorite Animal</legend>
+							<span class="contenttext"><b>What are your favorite vertebrate animals from these lists&quest;</b></span><br/>
+							<span class="contenttext">&#40;You can <u>hold CTRL then Click</u> to select <u>multiple options</u>.&#41;</span><br/><br/>
+							<div style="text-align:center;">
+							<select name="favAnimalsP1" multiple="multiple">
+								<optgroup label="Fish" id="Fish">
+									<option>Anchovies</option>
+									<option>Bass Fish</option>
+									<option>Betta fish</option>
+									<option>Cat fish</option>
+									<option>Codfish</option>
+									<option>Goldfish</option>
+									<option>Mackerals</option>
+									<option>Salmon</option>
+									<option>Sharks</option>
+									<option>Swordfish</option>
+									<option>Tilapia</option>
+									<option>Tuna</option>
+								</optgroup>
+								<optgroup label="Amphibians" id="Amphibians">
+									<option>Axolotl</option>
+									<option>Bullfrogs</option>
+									<option>Caecilian</option>
+									<option>Desert Rain Frogs</option>
+									<option>Mudpuppies</option>
+									<option>Newts</option>
+									<option>Red-Eyed Tree Frogs</option>
+									<option>Salamanders</option>
+									<option>Toads</option>
+									<option>Tree Frogs</option>
+								</optgroup>
+								<optgroup label="Reptiles" id="Reptiles">
+									<option>Alligators</option>
+									<option>Anacondas</option>
+									<option>Bearded Dragons</option>
+									<option>Boas</option>
+									<option>Caimans</option>
+									<option>Cobras</option>
+									<option>Crocodiles</option>
+									<option>Geckos</option>
+									<option>Iguanas</option>
+									<option>Komodo Dragons</option>
+									<option>Rattlesnakes</option>
+									<option>Turtles</option>
+								</optgroup>
+							</select>
+							<select name="favAnimalsP2" multiple="multiple">
+								<optgroup label="Mammals" id="Mammals">
+									<option>Armadillos</option>
+									<option>Apes</option>
+									<option>Bats</option>
+									<option>Bears</option>
+									<option>Cats</option>
+									<option>Cheetahs</option>
+									<option>Chimpanzees</option>
+									<option>Cows</option>
+									<option>Dogs</option>
+									<option>Dolphins</option>
+									<option>Elephants</option>
+									<option>Goats</option>
+									<option>Lions</option>
+									<option>Pigs</option>
+									<option>Platypus</option>
+									<option>Rats</option>
+									<option>Seals</option>
+									<option>Squirrels</option>
+									<option>Tigers</option>
+									<option>Whales</option>
+									<option>Wolves</option>
+									<option>Zebras</option>
+								</optgroup>
+								<optgroup label="Birds" id="Birds">
+									<option>Albatrosses</option>
+									<option>Chickens</option>
+									<option>Crows</option>
+									<option>Ducks</option>
+									<option>Geese</option>
+									<option>Finches</option>
+									<option>Kiwi Birds</option>
+									<option>Ostriches</option>
+									<option>Parrots</option>
+									<option>Peacocks</option>
+									<option>Penguins</option>
+									<option>Pigeons</option>
+									<option>Quails</option>
+									<option>Sparrows</option>
+									<option>Swans</option>
+								</optgroup>
+							</select>
+							</div>
+						</fieldset>
+						</td>
+					</tr>
+				</table>
+				<!--FREE FORM TEXT AREA INPUT-->
+				<table>
+					<tr>
+						<td>
+							<fieldset>
+							<legend>User Feedback</legend>
+							<span class="contenttext"><b>Any comments or feedback on my website&quest;</b></span>
+							<textarea name="paragraph" rows="10" maxlength="500" placeholder="Type your thoughts on my website here." style="resize:none; height:150px; width:630px;"></textarea>
+							</fieldset>
+						</td>
+					</tr>
+				<!--SUBMIT AND RESET FORM BUTTONS-->
+					<tr>
+						<td>
+							<div style="text-align:center;">
+							<!--I have placed inline javascript to help users confirm if they really want to submit or reset the form.
+								Previously from the form, I decided to make it onclick for both buttons because it'll be simpler. -->
+							<input type="submit" id="submit" value="Submit" onclick="return confirm('Please confirm if you want to SUBMIT the current form.')" />
+							<input type="reset" id="reset" value="Reset" onclick="return confirm('Please confirm if you want to RESET all of the input fields.')" />
+							</div>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<!--FOOTER: SITE LINKS-->
+		<div id="footer" style="margin-top:1900px;">
+			<h2 style="color:gold; text-align: center;">
+			<a href="coursereflection.html" style="font-weight:bold; text-decoration:underline;">Prev Page</a>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Site Links&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<a href="imagemap.html" style="font-weight:bold; text-decoration:underline;">Next Page</a>
+			</h2>
+			<ul id="footernav" style="color:gold; list-style-type:square; font-size:120%;">
+				<li><a href="black.html">Black &gt; My First Favorite Color</a></li>
+				<li><a href="colorchart.html">Color Chart</a></li>
+				<li><a href="crimson.html">Crimson &gt; My Third Favorite Color</a></li>
+				<li><a href="gold.html">Gold &gt; My Second Favorite Color</a></li>
+				<li><a href="intro.html">Intro</a></li>
+				<li><a href="imagemap.html">Image Map</a></li>
+				<li><a href="sitemap.html">Sitemap</a></li>
+			</ul>
+		</div>
+		<!--FOOTER: PERSONAL INFO-->
+		<div id="personalinfo" style="margin-top:2160px;">
+			<strong>Brandy Nguyen
+			<br/>bnguyen11&#64;neiu.edu</strong>
+			<br/>CS300 Spring 2023
+		</div>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<title>Art Gallery</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+<!--Fav Icon-->
+<link rel="icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/mystylesheet.css" type="text/css">
+<!--Google Fonts-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script&text=BRANDY%20NGUYEN">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gentium+Book+Plus&text=Life%20doesn%27t%20give%20us%20a%20perfect%20start%20%82%20but%20it%20is%20our%20own%20choice%20to%20make%20our%20imperfections%20into%20something%20worth%20more%20than%20gold">
+
+<style>
+div.banner
+{
+	margin-left:5px;
+	margin-top:5px;
+	width:975px;
+	height:155px;
+	background-color:#1B20EB;
+	position:absolute;
+	background-image:linear-gradient(to left, #1b20eb, #00ffd7);
+	text-shadow:-1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+	color:gold;
+}
+div.navbar
+{
+	margin-left:5px;
+	margin-top:165px;
+	width:973px;
+	height:70px;
+	border:2px solid black;
+	position:absolute;
+}
+/*I should add this to the external CSS file.
+This lets me set rules for the icons, especially ones that aren't in a table.
+I am trying to practice stylizing the webpage using divs.*/
+.icon
+{
+	width:70px;
+	height:70px;
+	margin:0px;
+	border-collapse:collapse;
+	border:0px;
+	float:left;
+	background-color:silver;
+}
+.icon:hover
+{
+	background-color:#1B20EB;
+}
+div.mainnav
+{
+	margin-left:-5px;
+	margin-top:235px;
+	width:200px;
+	height:610px;
+	/*Transparent background by setting Opacity property to 0*/
+	background-color: rgba(0, 0, 0, 0);
+	position:fixed;
+	padding:0px;
+	z-index:1;
+}
+div.artistbox
+{
+	margin-left:200px;
+	margin-top:245px;
+	width:475px;
+	height:605px;
+	background-color:#ADD8E6;
+	position:absolute;
+	text-align:center;
+	border:2px solid black;
+}
+/*Element rules for the three righthand boxes to be used as hyperlinks.*/
+div.introlink
+{
+	margin-left:687px;
+	margin-top:245px;
+	width:290px;
+	height:194px;
+	background-color:#1B88EB;
+	position:absolute;
+	display:flex;
+	border:2px solid #1B20EB;
+	color:gold;
+}
+div.schoolartlink
+{
+	margin-left:687px;
+	margin-top:450px;
+	width:290px;
+	height:194px;
+	background-color:#1B88EB;
+	position:absolute;
+	display:flex;
+	border:2px solid #1B20EB;
+	color:gold;
+}
+div.personalartlink
+{
+	margin-left:687px;
+	margin-top:655px;
+	width:290px;
+	height:194px;
+	background-color:#1B88EB;
+	position:absolute;
+	display:flex;
+	border:2px solid #1B20EB;
+	color:gold;
+}
+a.linkright div:hover
+{
+	background-color:#1B20EB;
+}
+/*Style element rules for the gallery divs*/
+div.schoolgallery
+{
+	margin-left:2px;
+	margin-top:861px;
+	width:975px;
+	height:960px;
+	background-color:#87CEEB;
+	position:absolute;
+	text-align:center;
+	border:2px solid black;
+}
+div.schoolgallery img
+{
+	border:3px solid gold;
+}
+div.schoolgallery img:hover
+{
+	border:3px solid #1B20EB;
+	transition: transform 0.2s ease-in;
+	transform: scale(1.05);
+}
+div.personalgallery
+{
+	margin-left:2px;
+	margin-top:1833px;
+	width:975px;
+	height:1680px;
+	background-color:#F0FFFF;
+	position:absolute;
+	text-align:center;
+	border:2px solid black;
+}
+div.personalgallery img
+{
+	border:3px solid gold;
+}
+div.personalgallery img:hover
+{
+	border:3px solid #1B20EB;
+	transition: transform 0.2s ease-in;
+	transform: scale(1.05);
+}
+/*I'll keep the footer simple, I should rethink how my footer in the table was made with the background images.*/
+div.footer
+{
+	margin-left:1px;
+	margin-top:3523px;
+	width:970px;
+	height:250px;
+	background-color:#1B20EB;
+	border:5px solid black;
+	position:absolute;
+	font-family:sans-serif;
+}
+/*Style rules for personal information in the footer.
+Background should be black with gold colored text.*/
+div.personalinfo
+{
+	margin-left:1px;
+	margin-top:3753px;
+	width:980px;
+	height:55px;
+	background-color:black;
+	text-align:center;
+	color:gold;
+	position:absolute;
+	z-index:1;
+	font-family:sans-serif;
+}
+</style>
+
+</head>
+<body>
+<div id="mainspace" style="width:985px; height:3805px;">
+<!--BANNER --> 
+<div id="top" class="banner">
+	<img src="images/banner-cat-CURRENT.jpg"
+	style="float:right;"
+	alt="A grey tabby cat narrows its eye at the left side of the screen. 
+	It has sleek grey fur that has symmetrical dark stripes around its dark yellowish eyes.
+	The background is dark blue while small glowing orbs of green-yellow light surround the cat."/>
+	<p style="text-align:center;">
+		<span style="font-size:325%; font-weight:bold; font-family:Dancing Script, Arial, sans-serif; letter-spacing:25px; ">
+		B<span style="color:#cedf33; font-size:70%;">R</span><span style="color:#a2e633; font-size:70%">A</span><span style="color:#7cec66; font-size:70%">N</span><span style="color:#54f299; font-size:70%">D</span><span style="color:#29f9cc; font-size:70%">Y</span>
+		N<span style="color:#91df33; font-size:70%;">G</span><span style="color:#4fdc66; font-size:70%">U</span><span style="color:#00cfcc; font-size:70%">Y</span><span style="color:#00c6cc; font-size:70%">E</span><span style="color:#0b9fff; font-size:70%;">N</span></span>
+		<span style="font-size:150%; font-family:Gentium Book Plus, Georgia,serif;">
+		<br/><i>Life doesn&apos;t give us a perfect start, but it is our own choice to make our imperfections into something worth more than gold.</i></span>
+	</p>
+</div>
+<div class="navbar">
+	<!--BACK ARROW-->
+	<a href="imagemap.html" style="border:0px;"><img class="icon" src="images/back_arrow_mod.png" alt="A thin, black arrow pointing towards the left side of the screen that sends the user to the image map webpage when clicked."/></a>
+	<!--HOME PAGE-->
+	<a href="intro.html" style="border:0px;"><img class="icon" src="images/home_button_mod.png" alt="A small black house with a chimmey on the top of the roof that send the user to the introduction web page whenever the user clicks on this icon."/></a>
+	<!--SITE MAP-->
+	<a href="sitemap.html" style="border:0px;"><img class="icon" src="images/map_icon_mod.png" alt="A small black map that is folded up with a round pin inserted on top of itthat sends the user to the sitemap web page when this icon is clicked."/></a>
+	<!--FORWARD ARROW-->
+	<a href="qualifications.html" style="border:0px;"><img class="icon" src="images/forward_arrow_mod.png" alt="A thin, black arrow pointing towards the right side of the screen that sends the user to the programming qualifications webpage when clicked."/></a>
+	<h1><span class="contenttext">&nbsp;&nbsp;Art Gallery</span></h1>
+</div>
+<div class="mainnav">
+	<ul id="mainnav" style="margin:0px; padding:0px; list-style:none; font-size:85%;">
+		<!--Intro-->
+		<li><a href="intro.html">Intro</a></li>
+		<!--Color Chart-->
+		<li><a href="colorchart.html">Color Chart</a></li>
+		<!--Three Favorite Colors in alphabetical order-->
+		<li><a href="black.html">Black &gt; My First Favorite Color</a></li>
+		<li><a href="crimson.html">Crimson &gt; My Third Favorite Color</a></li>
+		<li><a href="gold.html">Gold &gt; My Second Favorite Color</a></li>
+		<!--Image Map-->
+		<li><a href="imagemap.html">Image Map</a></li>
+		<!--Sitemap-->
+		<li><a href="sitemap.html">Sitemap</a></li>
+	</ul>
+</div>
+<!--Picture of the artist AKA myself-->
+<div class="artistbox">
+	<h2 style="font-size:170%;"><span class="contenttext">The Artist</span></h2>
+	<img src="images/brandy-gallery-test.jpg" alt="A lightly tanned man is sitting in the center of the photo. He is wearing a wrinkly, pale yellow shirt.His left hand pops out from the right side of the picture while holding a yellow wooden pencil in it.
+	The gentleman has a thin moustache and is wearing black rectangular glasses. He has glistening black hair that is styled in a bowl haircut. The background is a swirling mix of pink, blue, and green colors."
+	style="width:70%; height:70%; border:16px solid #402F1D;"/>
+	<span style="font-size:160%; font-family:Arial;"><br/><b>Brandy Nguyen</b></span>
+</div>
+<!--Local link that opens a new tab for introduction content-->
+	<a class="linkright" href="intro.html" target="_blank">
+		<div class="introlink">
+			<img src="images/brandy-mini.png" alt="A tan Vietnamese man whose head, neck, and shoulders are visible is staring intently at the camera. He is wearing a grey, wrinkled shirt and has black hair. 
+			He has a shaggy bowl haircut that's slightly combed to his right. Clicking on this image will open a new tab in the browser to the website's introduction page."/>
+			<b><span class="contenttext">Information About the Artist</span></b>
+		</div>
+	</a>
+<!--Local link that sends user down to the targetted school drawing div-->
+	<a class="linkright" href="#schoolgallery">
+	<div class="schoolartlink">
+	<img src="images/school.png" alt="A yellow school building that has red roofing and green shrubbery at the base. The building has three sections in which the middle section is the tallest while the left and right sections are of equal height.
+	All of the sections have at least four glass pane windows. The middle section has a stone staircase leading up to brown double doors with a clock above whose hands indicate that the time is at the ninth hour.
+	Clicking on this image will send users down to the school drawings section of the gallery."/>
+	<b><span class="contenttext">Go Down to School Drawings</span></b>
+	</div>
+	</a>
+<!--Local link that sends user down to the targetted personal drawing div-->
+	<a class="linkright" href="#personalgallery">
+	<div class="personalartlink">
+	<img src="images/sketchbook.png" alt="A rectangular black book is standing upright. The edges away from the book's spine are slightly curved. 
+	Along the right side of the dark cover are glistening golden letters that spell out sketch in all uppercase. Clicking on this image will send users down to the personal drawing section of this webpage."/>
+	<b><span class="contenttext">Go Down To Personal Drawings</span></b>
+	</div>
+	</a>
+<!--Gallery Section: School Drawings-->
+<div id="schoolgallery" class="schoolgallery">
+	<h2><span class="contenttext">School Drawings</span></h2>
+		<img src="images/batman.jpg" alt="A pencil shaded depiction of Batman from the titular Arkham video game franchise. The cowl is shaped like a bat's head with its sharp ears on top and an opening for the mouth near the bottom of the cowl.
+		The eyes are shaded black and are slanted towards the center of the face while his shadow-covered mouth frowns to make a scowling face. A gray cape wraps around the shoulders of Batman's black armor. He makes a fist with his right gauntlet outlined in dark pencil markings."/><br/>
+		<img src="images/turban.jpg" alt="A young man wearing a white turban and wrinkled robes is facing towards the right side of the screen. He has a crooked nose, dark eyebrows, an ear right under the turban, and a thick neck. Half of his face and his robes are covered in shadows." 
+		style="margin-top:25px;"/><br/><br/>
+	<a href="#top" style="color:#1B20EB; text-decoration:underline;"><b><span class="contenttext">Return to Top</span></b></a>
+</div>
+<!--Gallery Section: Personal Drawings-->
+<div id="personalgallery" class="personalgallery">
+	<h2><span class="contenttext">Personal Drawings</span></h2>
+	<img src="images/cove.jpg" alt="A young, slim, and handsome man is standing with his arms crossed. He has shaggy hair covering his eybrows, forehead, and the sides of his cheeks. He looks towards you with a smile.
+	He is wearing no shirt which exposes his slim, muscular figure. His pecs are sqaure and some of his abs are visible below his crossed arms. He is wearing gym shorts with pockets."/><br/>
+	<img src="images/kazuha.jpg" alt="A young man is standing with a sharp katana held in his bandaged right hand. The blade leans behind the man's back. He has downward spikey, white hair with a ponytail and a single streak of dark-colored hair near the front of his face.
+	He is wearing a black and white stripped scarf that is flowing towards the right side of the screen. He is wearing a kimono from which a maple leaf hangs from his waist." style="margin-top:25px;"/><br/>
+	<img src="images/flak-mod.jpg" alt="A robot cyclops is surrounded by a trio of alien beasts. On the left is a spikey haired monkey with a visor and thorny forearms. On the bottom right is a thorny creature who resembles a canine in which it is on all fours and spike protruding from its face. 
+	Above the spikey dog creature is an ant-spider hybrid that only has a fanged mouth and no eyes on its plated head. The adomen protrudes while its thin yet sharp legs are on the ground. The robot cyclops is wearing a hood and a padded sweater while doing a thumbs-up pose with both hands. One of the cyclops' legs is an exposed mechanical claw while the other is wearing a single shoe." 
+	style="margin-top:25px;"/><br/><br/>
+	<a href="#top" style="color:#1B20EB; text-decoration:underline;"><b><span class="contenttext">Return to Top</span></b></a>
+</div>
+<!--Footer-->
+<!--My footer design from the template is harder to implement into divs than I initially thought, so I'll keep things short and simple.-->
+<div class="footer">
+	<h2 style="color:gold; text-align: center;">
+	<a href="imagemap.html" style="font-weight:bold; text-decoration:underline;">Prev Page</a>
+	&emsp;&emsp;&emsp;&emsp;Site Links&emsp;&emsp;&emsp;&emsp;
+	<a href="qualifications.html" style="font-weight:bold; text-decoration:underline;">Next Page</a>
+	</h2>
+	<ul id="footernav" style="color:gold; list-style-type:square; font-size:120%;">
+		<li><a href="black.html">Black &gt; My First Favorite Color</a></li>
+		<li><a href="colorchart.html">Color Chart</a></li>
+		<li><a href="crimson.html">Crimson &gt; My Third Favorite Color</a></li>
+		<li><a href="gold.html">Gold &gt; My Second Favorite Color</a></li>
+		<li><a href="intro.html">Intro</a></li>
+		<li><a href="imagemap.html">Image Map</a></li>
+		<li><a href="sitemap.html">Sitemap</a></li>
+	</ul>
+</div>
+<!--Person Information-->
+<div class="personalinfo">
+	<strong>Brandy Nguyen
+	<br/>bnguyen11&#64;neiu.edu</strong>
+	<br/>CS300 Spring 2023
+</div>
+</div>
+</body>
+</html>

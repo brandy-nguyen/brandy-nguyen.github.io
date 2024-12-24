@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" >
+	<head>
+	<title>Image Map</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+	<!--Fav Icon-->
+	<link rel="icon" href="images/favicon.ico">
+	<!--Link to external style sheet here-->
+	<link rel="stylesheet" href="css/mystylesheet.css" type="text/css">
+	<!--Google Fonts-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script&text=BRANDY%20NGUYEN">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gentium+Book+Plus&text=Life%20doesn%27t%20give%20us%20a%20perfect%20start%20%82%20but%20it%20is%20our%20own%20choice%20to%20make%20our%20imperfections%20into%20something%20worth%20more%20than%20gold">
+	</head>
+	<body>
+		<div id="mainspace">
+		<!--BANNER-->
+		<table id="banner" class="bannerstyle" style="background-color:#1B20EB;">
+			<tr>
+				<td style="padding:10px; padding-bottom:0px; margin:0px;">
+					<!--Name and Motto-->
+					<p style="text-align:center;">
+					<span style="font-size:465%; font-weight:bold; font-family:Dancing Script, Arial, sans-serif; letter-spacing:25px; ">
+					B<span style="color:#cedf33; font-size:70%;">R</span><span style="color:#a2e633; font-size:70%">A</span><span style="color:#7cec66; font-size:70%">N</span><span style="color:#54f299; font-size:70%">D</span><span style="color:#29f9cc; font-size:70%">Y</span>
+					N<span style="color:#91df33; font-size:70%;">G</span><span style="color:#4fdc66; font-size:70%">U</span><span style="color:#00cfcc; font-size:70%">Y</span><span style="color:#00c6cc; font-size:70%">E</span><span style="color:#0b9fff; font-size:70%;">N</span></span>
+					<span style="font-size:170%; font-family:Gentium Book Plus, Georgia,serif;">
+					<br/><i>Life doesn&apos;t give us a perfect start, but it is our own choice to make our imperfections into something worth more than gold.</i></span>
+					</p>
+				</td>
+				<td style="vertical-align:bottom; padding:0px;">
+					<!--Banner Image-->
+					<img src="images/banner-cat-CURRENT.jpg"
+					alt="A grey tabby cat narrows its eye at the left side of the screen. 
+					It has sleek grey fur that has symmetrical dark stripes around its dark yellowish eyes.
+					The background is dark blue while small glowing orbs of green-yellow light surround the cat."/>
+				</td>
+			</tr>
+		</table>
+		<br/>
+		<!--NAVIGATION BAR-->
+		<table id="navbar" style="display:block; border:2px solid black;">
+			<tr>
+				<!--Page turners, Home icon, and Sitemap icon-->
+				<td class="navicon">
+					<a href="websitesurvey.html" style="border:0px;"><img src="images/back_arrow_mod.png" alt="A thin, black arrow pointing towards the left side of the screen that sends the user back to the website survey when clicked." 
+					style="width:70px; height:70px;"/></a>
+				</td>
+				<td class="navicon">
+					<a href="intro.html" style="border:0px; margin:5px;">
+					<img src="images/home_button_mod.png" style = "width:70px; height:70px;" 
+					alt="A small black house with a chimmey on the top of the roof 
+					that send the user to the introduction web page whenever the user clicks on this icon."/></a>
+				</td>
+				<td class="navicon">
+					<a href="sitemap.html">
+					<img src="images/map_icon_mod.png" alt="A small black map that is folded up with a round pin inserted on top of it
+					that sends the user to the sitemap web page when this icon is clicked." 
+					style="width:70px; height:70px;"/></a>
+				</td>
+				<td class="navicon">
+					<a href="artgallery.html" style="border:0px;"><img src="images/forward_arrow_mod.png" alt="A thin, black arrow pointing towards the right side of the screen that sends the user back to the art gallery webpage when clicked." 
+					style="width:70px; height:70px;"/></a>
+				</td>
+				<!--Title of webpage is implemented in this table cell-->
+				<td style="padding-left:15px; background-color:#FFD700;">
+					<h1 style="text-align:left;"><span class="contenttext">Image Map</span></h1>
+				</td>
+			</tr>
+		</table>
+		<br/>
+		<!--MAIN NAV-->
+		<table id="navigation" style="float:left; margin-left:-10px; width:200px;">
+			<tr>
+				<td>
+					<!--This list should float on the left with the elements in vertical order-->
+					<ul id="mainnav" style="margin:0px; padding:0px; list-style:none;">
+						<!--Intro-->
+						<li><a href="intro.html">Intro</a></li>
+						<!--Color Chart-->
+						<li><a href="colorchart.html">Color Chart</a></li>
+						<!--Three Favorite Colors in alphabetical order-->
+						<li><a href="black.html">Black &gt; My First Favorite Color</a></li>
+						<li><a href="crimson.html">Crimson &gt; My Third Favorite Color</a></li>
+						<li><a href="gold.html">Gold &gt; My Second Favorite Color</a></li>
+						<!--Image Map-->
+						<li><a href="imagemap.html">Image Map</a></li>
+						<!--Sitemap-->
+						<li><a href="sitemap.html">Sitemap</a></li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+		<!--CONTENT-->
+		<table id="content" style="width:675px;">
+			<tr>
+				<td>
+					<!--IMAGE MAP CREATION-->
+					<map name="imagemap" id="imagemap">
+					<!--Golden Compass to Site Map-->
+					<area shape="circle" coords="107,165,82" href="sitemap.html" alt="Sitemap">
+					<!--Paint Splats to Color Pages-->
+					<area shape="circle" coords="124,302,20" href="black.html" alt="Black Color Page">
+					<area shape="circle" coords="177,328,22" href="crimson.html" alt="Crimson Color Page">
+					<area shape="circle" coords="213,367,25" href="gold.html" alt="Gold Color Page">
+					<!--Artist Palette to Art Gallery-->
+					<!--I know that this will overlap with the color links, but those aforementioned links should override this link since they have precedence.-->
+					<area shape="poly" coords="14,380,6,348,41,293,84,271,138,271,203,305,255,365,265,395,265,430,250,466,300,480,298,491,191,459,210,476,210,487,178,506,165,506,122,489,108,435,8,403,9,398,106,424,95,405,57,381,17,382" href="artgallery.html" alt="Art Gallery Page">
+					<!--Framed Photo to Intro Page-->
+					<area shape="rect" coords="216,9,458,296" href="intro.html" alt="Intro Page">
+					<!--Resume Paper to Qualifications Page-->
+					<area shape="poly" coords="507,137,755,178,723,388,762,332,771,342,715,433,700,513,661,517,647,523,644,512,456,479" href="qualifications.html" alt="Programming Qualifications Page">
+					</map>
+					<!--The image here is used as the image map-->
+					<img usemap="#imagemap" src="images/image-map-mod.png" alt="A pine wood desk is seen from above. On the top left corner lies a golden circular compass with a shiny gold knob in the center arounded by grids of abbreviated directions denoted by the letters: N, E, W, S. Two black arrows are on opposite sides of the knob and are pointing near the West and East directions. 
+					Below it is a large wooden palette shaped like a kidney with three circular spots splattered with paint whose colors are black, crimson, and gold from left to right. In the top middle of the desk is a wooden frame of a photo of an Asian man who appears to be sketched in pencil.
+					On the bottom right is a large piece of printer paper with a black fountain pen nears its bottom right corner. It reads 'My Qualifications' near the top and in the body are the four logos of the following programming languages: Java, SQL, HTML, and CSS."/>
+					<p>
+					<span class="contenttext">
+					This is an <b>image map</b> that I have created for the purpose of leading users into <b>my advanced works</b> including this one.<br/>
+					I have implemented <b>six clickable areas</b> that should take you to their respective webpages&colon;
+					</span>
+					</p>
+						<ol style="list-style-type:upper-roman; font-family:sans-serif;">
+					<li>The <b>golden compass</b> will send you to my <a class="text" href="sitemap.html">site map</a> if you want to see all of my other web pages.</li>
+					<li>The <b>artist palette</b> will lead you to my <a class="text" href="artgallery.html">art gallery</a> page in which you can look at my drawings.</li>
+					<li>The <b>three color splats</b> will each lead to <b>a color page</b>: <a class="text" href="black.html">Black</a>, <a class="text" href="crimson.html">Crimson</a>, and <a class="text" href="gold.html">Gold</a>.</li>
+					<li>The <b>framed photo of my face</b> will lead you to the <a class="text" href="intro.html">introduction page</a>.</li>
+					<li>The <b>paper with logos of various programming languages</b> leads you to the <a class="text" href="qualifications.html">qualifications page</a>.</li>
+						</ol>
+				</td>
+			</tr>
+		</table>
+		<br/>
+		<!--FOOTER-->
+		<table id="footer" style="color:#FFD700; background-color:#1B20EB; border-spacing:0px; border:5px solid black; font-family:Verdana;">
+			<tr>
+				<!--PREVIOUS PAGE TURNER-->
+				<td class="textturner" style="background-image:url(images/footer-prev-arrow-mod.png);">
+					<a href="websitesurvey.html" style="font-size:150%;"><b>PREV PAGE</b></a>
+				</td>
+				<td>
+					<!--Secondary navigation structure-->
+					<h2 style="text-align:center;">Site Links</h2>
+					<ul id="footernav" style="list-style-type:square; margin-bottom:10px; font-size:120%;">
+						<li><a href="black.html">Black &gt; My First Favorite Color</a></li>
+						<li><a href="colorchart.html">Color Chart</a></li>
+						<li><a href="crimson.html">Crimson &gt; My Third Favorite Color</a></li>
+						<li><a href="gold.html">Gold &gt; My Second Favorite Color</a></li>
+						<li><a href="intro.html">Intro</a></li>
+						<li><a href="imagemap.html">Image Map</a></li>
+						<li><a href="sitemap.html">Sitemap</a></li>
+					</ul>
+				</td>
+				<!--NEXT PAGE TURNER-->
+				<td class="textturner" style="background-image:url(images/footer-next-arrow-mod.png);">
+					<a href="artgallery.html" style="font-size:150%;"><b>NEXT PAGE</b></a>
+				</td>
+			</tr>
+			<!--Developer Information-->
+			<tr style="background-color:black;">
+				<td colspan="3" style="text-align:center; padding-top:5px;">
+					<strong>Brandy Nguyen
+					<br/>bnguyen11&#64;neiu.edu</strong>
+					<br/>CS300 Spring 2023
+				</td>
+			</tr>
+		</table>
+		</div>
+	</body>
+</html>

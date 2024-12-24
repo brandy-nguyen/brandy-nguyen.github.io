@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Virtual Egg</title>
+		<!--Fav Icon-->
+		<link rel="icon" href="images/favicon.ico">	
+		<style>
+			body
+			{
+				/*The background image is a set of clouds that should cover the size of the screen while the background color is sky blue.*/
+				background-image: url(images/clouds-mod.png);
+				background-repeat:no-repeat;
+				background-size:cover;
+				background-color:#87CEEB;
+				text-align:center;
+			}
+			#leftsun
+			{
+				/*This sun should be in the background behind the egg but the div should be placed in z-index:-1.*/
+				width:100%;
+				height:320px;
+				position:fixed;
+				z-index:-1;
+				background-image: url(images/sun.png);
+				background-repeat:no-repeat;
+				background-position:right;
+				background-size:contain;
+			}
+			#egg
+			{
+				/*I know z-index:0 is on by default but this is to show how z-indexes work.*/
+				z-index:0;
+				font-size:400%;
+
+			}
+			.bottomclouds
+			{
+				/*Clouds at the bottom of the screen that should be placed in front of background clouds and egg due to z-index:1*/
+				width:100%;
+				height:250px;
+				background-image: url(images/bottom-clouds.png);
+				background-repeat:no-repeat;
+				background-position:bottom;
+				background-size:100%;
+				position:fixed;
+				z-index:1;
+			}
+		</style>
+	</head>
+	<body>
+		<!--Javascript that makes a prompt box appear on page load.-->
+		<!--A fun little multiple choice guessing game made from using a prompt and switch statements.-->
+		<script>
+			function loadPrompt(){
+				let answer = prompt('Can you guess what I drew on this golden egg?\nEnter the letter \(Case-sensitive\) associated with the choice.\n\nA. Goose God\nB. Daffy Duck\nC. Chicken Little\nD. Dwayne Johnson');
+				switch(answer)
+				{
+					case 'A':
+						alert('You are correct! It\'s the Goose God from Courage the Cowardly Dog!\n\nThe answer is A!');
+						break;
+					case 'B':
+						alert('Sorry but B is incorrect. I considered drawing him but it\'s currently rabbit season.\n\nThe right answer is A!');
+						break;
+					case 'C':
+						alert('Sorry but C is incorrect. Have you watched the 2005 film? I thought it was fun.\n\nThe right answer is A!');
+						break;
+					case 'D':
+						alert('Sorry but D is incorrect. I cannot hope to capture the beauty of the Rock himself, but I can come close.\n\nThe right answer is A!');
+						break;
+					default:
+						alert('I see you couldn\'t wait to feast your eyes.\nThe correct answer is A which is the Goose God from Courage the Cowardly Dog.\n\nNow behold your eyes!');
+						break;
+				}
+			}
+			document.onload = loadPrompt();
+		</script>
+		<!--This webpage was made to toy around with z-indices and background images.-->
+		<div id="leftsun">
+		</div>
+		<div id="egg">
+		Brandy Nguyen
+		<br/>
+		<!--Decorated Egg Image-->
+		<img src="images/decorated-egg.png" alt="A muscular anthromorhpic goose is drawn onto a shiny golden egg. The cartoonish goose god has purple eyelids, blue eyes, and an orange bill while having massive pectoral muscles.
+		He frowns while his eyebrows are raised at the viewer. He wears a blue chiton which is a robe that is strapped to one's shoulder. There is a phrase under him which reads 'My wife is a truck' in cream and gold colors. "/>
+		</div>
+		<div class="bottomclouds">
+		</div>
+	</body>
+</html>

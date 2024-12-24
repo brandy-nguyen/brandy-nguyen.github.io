@@ -1,0 +1,368 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Javascript Alert!</title>
+<style type="text/CSS">
+#chicken {color:lime; font:verdana;}
+#barn{color:red;}
+#grain{color:blue;}
+</style>
+
+<script type="text/javascript">
+<!--
+var chicken= new Array();
+chicken[0]="the barn";
+chicken[1]="the chicken";
+chicken[2]="the grain";
+chicken[3]="nothing";
+
+var barn= new Array();
+barn[0]="the barn";
+barn[1]="the chicken";
+barn[2]="the grain";
+barn[3]="nothing";
+
+var grain= new Array();
+grain[0]="the barn";
+grain[1]="the chicken";
+grain[2]="the grain";
+grain[3]="nothing";
+
+var w=1;
+var x=3;
+var y=2;
+var z=0;
+
+// -->
+</script>
+</head>
+<body>
+<h1 id="chicken">Javascript Alert</h1>
+<p>Find the exact cell location of the items required by the quiz values you were assigned.</p>
+<table width="975" border="3" cellspacing="3" cellpadding="2" bordercolor="#000000" bgcolor="#0000FF">
+  <tr bgcolor="#FFFF00"> 
+    <td> 
+      <div align="center">1</div>
+    </td>
+    <td> 
+      <div align="center">2</div>
+    </td>
+    <td> 
+      <div align="center">3</div>
+    </td>
+    <td> 
+      <div align="center" id="chicken">4</div>
+    </td>
+    <td> 
+      <div align="center">5</div>
+    </td>
+    <td> 
+      <div align="center">6</div>
+    </td>
+    <td> 
+      <div align="center">7</div>
+    </td>
+    <td> 
+      <div align="center" onmouseover="javascript:alert('You found ' + chicken[y+1])">8</div>
+    </td>
+    <td> 
+      <div align="center">9</div>
+    </td>
+    <td> 
+      <div align="center">10</div>
+    </td>
+  </tr>
+  <tr bgcolor="#FFFF00"> 
+    <td> 
+      <div align="center">11</div>
+    </td>
+    <td> 
+      <div align="center">12</div>
+    </td>
+    <td> 
+      <div align="center">13</div>
+    </td>
+    <td> 
+      <div align="center" id="barn">14</div>
+    </td>
+    <td> 
+      <div align="center">15</div>
+    </td>
+    <td> 
+      <div align="center">16</div>
+    </td>
+    <td> 
+      <div align="center">17</div>
+    </td>
+    <td> 
+      <div align="center">18</div>
+    </td>
+    <td> 
+      <div align="center">19</div>
+    </td>
+    <td> 
+      <div align="center" id="grain">20</div>
+    </td>
+  </tr>
+  <tr bgcolor="#FFFF00"> 
+    <td> 
+      <div align="center">21</div>
+    </td>
+    <td> 
+      <div align="center">22</div>
+    </td>
+    <td> 
+      <div align="center">23</div>
+    </td>
+    <td> 
+      <div align="center">24</div>
+    </td>
+    <td> 
+      <div align="center">25</div>
+    </td>
+    <td> 
+      <div align="center" onclick="javascript:alert('You found ' + barn[w+y])">26</div>
+    </td>
+    <td> 
+      <div align="center">27</div>
+    </td>
+    <td> 
+      <div align="center" >28</div>
+    </td>
+    <td> 
+      <div align="center">29</div>
+    </td>
+    <td> 
+      <div align="center" id="chicken">30</div>
+    </td>
+  </tr>
+  <tr bgcolor="#FFFF00"> 
+    <td> 
+      <div align="center">31</div>
+    </td>
+    <td> 
+      <div align="center">32</div>
+    </td>
+    <td> 
+      <div align="center"onclick="javascript:alert('You found ' + grain[x-2])">33</div>
+    </td>
+    <td> 
+      <div align="center">34</div>
+    </td>
+    <td> 
+      <div align="center" id="barn">35</div>
+    </td>
+    <td> 
+      <div align="center">36</div>
+    </td>
+    <td> 
+      <div align="center">37</div>
+    </td>
+    <td> 
+      <div align="center">38</div>
+    </td>
+    <td> 
+      <div align="center">39</div>
+    </td>
+    <td> 
+      <div align="center">40</div>
+    </td>
+  </tr>
+  <tr bgcolor="#FFFF00"> 
+    <td> 
+      <div align="center">41</div>
+    </td>
+    <td> 
+      <div align="center">42</div>
+    </td>
+    <td> 
+      <div align="center">43</div>
+    </td>
+    <td> 
+      <div align="center">44</div>
+    </td>
+    <td> 
+      <div align="center">45</div>
+    </td>
+    <td> 
+      <div align="center">46</div>
+    </td>
+    <td> 
+      <div align="center">47</div>
+    </td>
+    <td> 
+      <div align="center">48</div>
+    </td>
+    <td> 
+      <div align="center">49</div>
+    </td>
+    <td> 
+      <div align="center">50</div>
+    </td>
+  </tr>
+  <tr bgcolor="#FFFF00"> 
+    <td> 
+      <div align="center">51</div>
+    </td>
+    <td> 
+      <div align="center">52</div>
+    </td>
+    <td> 
+      <div align="center" id="grain">53</div>
+    </td>
+    <td> 
+      <div align="center" >54</div>
+    </td>
+    <td> 
+      <div align="center">55</div>
+    </td>
+    <td> 
+      <div align="center">56</div>
+    </td>
+    <td> 
+      <div align="center">57</div>
+    </td>
+    <td> 
+      <div align="center" >58</div>
+    </td>
+    <td> 
+      <div align="center" onmouseover="javascript:alert('You found ' + grain[x])">59</div>
+    </td>
+    <td> 
+      <div align="center">60</div>
+    </td>
+  </tr>
+  <tr bgcolor="#FFFF00"> 
+    <td> 
+      <div align="center">61</div>
+    </td>
+    <td> 
+      <div align="center">62</div>
+    </td>
+    <td> 
+      <div align="center">63</div>
+    </td>
+    <td> 
+      <div align="center">64</div>
+    </td>
+    <td> 
+      <div align="center">65</div>
+    </td>
+    <td> 
+      <div align="center">66</div>
+    </td>
+    <td> 
+      <div align="center"onclick="javascript:alert('You found ' + barn[w+1])">67</div>
+    </td>
+    <td> 
+      <div align="center">68</div>
+    </td>
+    <td> 
+      <div align="center">69</div>
+    </td>
+    <td> 
+      <div align="center">70</div>
+    </td>
+  </tr>
+  <tr bgcolor="#FFFF00"> 
+    <td> 
+      <div align="center">71</div>
+    </td>
+    <td> 
+      <div align="center">72</div>
+    </td>
+    <td> 
+      <div align="center">73</div>
+    </td>
+    <td> 
+      <div align="center">74</div>
+    </td>
+    <td> 
+      <div align="center">75</div>
+    </td>
+    <td> 
+      <div align="center">76</div>
+    </td>
+    <td> 
+      <div align="center" id="chicken">77</div>
+    </td>
+    <td> 
+      <div align="center">78</div>
+    </td>
+    <td> 
+      <div align="center">79</div>
+    </td>
+    <td> 
+      <div align="center">80</div>
+    </td>
+  </tr>
+  <tr bgcolor="#FFFF00"> 
+    <td> 
+      <div align="center">81</div>
+    </td>
+    <td> 
+      <div align="center">82</div>
+    </td>
+    <td> 
+      <div align="center">83</div>
+    </td>
+    <td> 
+      <div align="center">84</div>
+    </td>
+    <td> 
+      <div align="center" >85</div>
+    </td>
+    <td> 
+      <div align="center">86</div>
+    </td>
+    <td> 
+      <div align="center">87</div>
+    </td>
+    <td> 
+      <div align="center">88</div>
+    </td>
+    <td> 
+      <div align="center"onmouseover="javascript:alert('You found ' + chicken[w-1])">89</div>
+    </td>
+    <td> 
+      <div align="center">90</div>
+    </td>
+  </tr>
+  <tr bgcolor="#FFFF00"> 
+    <td> 
+      <div align="center">91</div>
+    </td>
+    <td> 
+      <div align="center" id="barn">92</div>
+    </td>
+    <td> 
+      <div align="center">93</div>
+    </td>
+    <td> 
+      <div align="center">94</div>
+    </td>
+    <td> 
+      <div align="center" >95</div>
+    </td>
+    <td> 
+      <div align="center">96</div>
+    </td>
+    <td> 
+      <div align="center">97</div>
+    </td>
+    <td> 
+      <div align="center">98</div>
+    </td>
+    <td> 
+      <div align="center">99</div>
+    </td>
+    <td> 
+      <div align="center">100</div>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>

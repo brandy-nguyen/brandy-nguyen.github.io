@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<!--Style Elements-->
+		<style>
+			.question
+			{
+				font-size:150%;
+				font-family: sans-serif;
+				font-weight:bold;
+			}
+			#attributes li
+			{
+				margin-top:10px;
+				color:blue;
+				font-size:150%;
+				font-family:sans-serif;
+			}
+		</style>
+		<title>Videos in HTML</title>
+		<!--Fav Icon-->
+		<link rel="icon" href="images/favicon.ico">
+		<!--External CSS Sheet #1:General Aesthetics-->
+		<link rel="stylesheet" href="css/mystylesheet.css" type="text/css">
+		<!--External CSS Sheet #2:Page Layout-->
+		<link rel="stylesheet" href="css/cssdemo.css" type="text/css">
+		<!--External CSS Sheet #3 and #4:Google Fonts-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script&text=BRANDY%20NGUYEN">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gentium+Book+Plus&text=Life%20doesn%27t%20give%20us%20a%20perfect%20start%20%82%20but%20it%20is%20our%20own%20choice%20to%20make%20our%20imperfections%20into%20something%20worth%20more%20than%20gold">
+		<!--Javascript that activates on a user event.
+			If the user presses specifically on the F key and releases it,
+			an alert will pop up to say that respects have been paid to an era.-->
+		<script>
+			document.addEventListener('keydown', (event) =>{
+				if(event.key === 'f')
+				{
+					alert('You have paid your respects to the Adobe Flash Player.\n\nRest in peace, Adobe Flash Player \(1996-2020\).\nYou were a childhood to many and your legacy lives on in our hearts.');
+				}
+			});
+		</script>
+	</head>
+	<body>
+	<!--Needed to specify height for div in order to make background color show and for the sticky position to work.-->
+	<div id="mainspace" style="height:2900px; width:975px;">
+		<!--BANNER-->
+		<div id="banner" class="bannerstyle">
+			<p style="text-align:center; color:#FFD700;">
+				<img src="images/banner-cat-CURRENT.jpg" style="float:right;"
+				alt="A grey tabby cat narrows its eye at the left side of the screen. 
+				It has sleek grey fur that has symmetrical dark stripes around its dark yellowish eyes.
+				The background is dark blue while small glowing orbs of green-yellow light surround the cat."/>
+				<!--Styling Name in Banner: Increased letter & word spacing; manual fade-in effects;-->
+				<span style="font-size:465%; font-weight:bold; font-family:Dancing Script, Arial, sans-serif; letter-spacing:25px; ">
+				<br/>B<span style="color:#cedf33; font-size:70%;">R</span><span style="color:#a2e633; font-size:70%">A</span><span style="color:#7cec66; font-size:70%">N</span><span style="color:#54f299; font-size:70%">D</span><span style="color:#29f9cc; font-size:70%">Y</span>
+				N<span style="color:#91df33; font-size:70%;">G</span><span style="color:#4fdc66; font-size:70%">U</span><span style="color:#00cfcc; font-size:70%">Y</span><span style="color:#00c6cc; font-size:70%">E</span><span style="color:#0b9fff; font-size:70%;">N</span>
+				</span>
+				<span style="font-size:170%; font-family:Gentium Book Plus, Georgia,serif;">
+				<br/><br/><i>Life doesn&apos;t give us a perfect start, but it is our own choice to make our imperfections into something worth more than gold.</i>
+				</span>
+			</p>
+		</div>
+		<!--NAVBAR-->
+		<div id="navbar">
+			<!--BACK ARROW-->
+			<a href="qualifications.html" style="border:0px;"><img class="icon" src="images/back_arrow_mod.png" alt="A thin, black arrow pointing towards the left side of the screen that sends the user to the programming qualifications webpage when clicked."/></a>
+			<!--HOME PAGE-->
+			<a href="intro.html" style="border:0px;"><img class="icon" src="images/home_button_mod.png" alt="A small black house with a chimmey on the top of the roof that send the user to the introduction web page whenever the user clicks on this icon."/></a>
+			<!--SITE MAP-->
+			<a href="sitemap.html" style="border:0px;"><img class="icon" src="images/map_icon_mod.png" alt="A small black map that is folded up with a round pin inserted on top of it that sends the user to the sitemap web page when this icon is clicked."/></a>
+			<!--FORWARD ARROW-->
+			<a href="websitesurvey.html" style="border:0px;"><img class="icon" src="images/forward_arrow_mod.png" alt="A thin, black arrow pointing towards the right side of the screen that sends the user to the website survey when clicked."/></a>
+			<h1><span class="contenttext">&nbsp;&nbsp;Videos in HTML</span></h1>
+		</div>
+		<!--MAINNAV-->
+		<!--I slightly changed the name because only one instance of the named id can be used.-->
+		<div id="mainnavigation">
+			<ul id="mainnav" style="margin:0px; padding:0px; list-style:none; font-size:85%;">
+				<!--Intro-->
+				<li><a href="intro.html">Intro</a></li>
+				<!--Color Chart-->
+				<li><a href="colorchart.html">Color Chart</a></li>
+				<!--Three Favorite Colors in alphabetical order-->
+				<li><a href="black.html">Black &gt; My First Favorite Color</a></li>
+				<li><a href="crimson.html">Crimson &gt; My Third Favorite Color</a></li>
+				<li><a href="gold.html">Gold &gt; My Second Favorite Color</a></li>
+				<!--Image Map-->
+				<li><a href="imagemap.html">Image Map</a></li>
+				<!--Sitemap-->
+				<li><a href="sitemap.html">Sitemap</a></li>
+			</ul>
+		</div>
+		<!--CONTENT-->
+		<div id="content" style="height:2000px; margin-left:295px;">
+			<!--Question #1:Purpose/Use of Video-->
+			<span class="question">1. What is the purpose&sol;use for this element&quest;</span><br/><br/>
+			<span class="contenttext" style="color:blue; font-size:150%;">The <b>&lt;video&gt;</b> element is used by web developers to <b>embed videos into web pages</b>.<br/><br/>
+			<b><u>Attributes</u></b></span>
+			<ul id="attributes">
+				<li><b>Src&colon;</b> Where the specified video file is located.</li>
+				<li><b>Height and Width&colon;</b> The height and width of the video.</li>
+				<li><b>Controls&colon;</b> Determines if the video should have controls like play, pause, and volume.</li>
+				<li><b>Autoplay&colon;</b> Specifies if the video should automatically play once loaded onto the page.</li>
+				<li><b>Muted&colon;</b> The video&apos;s volume is set to muted from the start.</li>
+				<li><b>Loop&colon;</b> Sets the video to automatically replay itself.</li>
+			</ul>
+			<!--Question 2:Browser Support-->
+			<span class="question">2. What browsers support its use&quest;</span><br/><br/>
+			<span class="contenttext" style="color:blue; font-size:150%;">This <i>handsome</i> fellow will tell you the <b>major browsers that support the &lt;video&gt; element</b>.<br/></span>
+			<!--It is always a good idea to specify the height and width to optimize the page loading just as you would with images.-->
+			<video src="images/videos/BrowserSupport.mp4" height="380" width="675" style="display:block;" controls>
+				<!--I would have loved to use track to add Captions, not Subtitles, to let more of my audience listen to my beautiful words.
+					However, Google Chrome and Firefox see it as a security risk and an unsafe attempt to load them. My time wasted on making funny captions for nothing.-->
+				<track src="browsersupport_en.vtt" kind="captions" srclang="en" label="English">
+				Your current browser does not support MP4 videos.
+			</video><br/>
+			<!--Question #3:Replaced What?-->
+			<span class="question">3. Did it replace an existing HTML element&quest; And if so, how&quest;</span><br/><br/>
+			<!--RIP Adobe Flash Player-->
+			<div style="text-align:center;"><span class="contenttext" style="color:blue; font-size:150%; float:left;">Prepare to <b>press F</b> to pay your respects.</span><br/><br/>
+			<img src="images/Adobe_Flash.png" style="height:292px; width:300px;" alt="A crimson colored square with a lower-case F in the center.
+			The F is colored in bright white and it is curved in a serpentine shape." title="Press F to pay respects to the Adobe Flash Player."></div><br/>
+			<span class="contenttext" style="color:blue; font-size:150%;">Although the video element <b>did not replace an existing HTML element</b>,
+			I would say that it and the rest of HTML5 <b>led to the discontinuation of the Adobe Flash Player</b>.<br/><br/>
+			How&quest;<br/><br/> <b>HTML5 was seen as a better alternative than Adobe Flash Player.</b><br/><br/>
+			HTML5 allows web developers to embed more elements on their webpage that were previously unavailable.
+			This includes the <b>video element which allows us to directly embed videos</b> on our pages <b>without using a third&hyphen;party browser plug&hyphen;in</b>.<br/><br/>
+			HTML5 soon earned the favor of browsers for not being more efficient in processing power but also being <b>more accessible to users</b> than Flash.</span><br/><br/>
+			<!--Question #4:Video Demonstration-->
+			<span class="question">4. Can you demonstrate the HTML5 video element&quest;</span><br/><br/>
+			<video src="images/videos/surprise.mp4" height="600" width="600" style="display:block;" controls muted loop>
+				Your current browser does not support MP4 videos. You&apos;re missing out on the surprise.
+			</video>
+		</div>
+		<!--FOOTER: SITE LINKS-->
+		<div id="footer" style="margin-top:2900px;">
+			<h2 style="color:gold; text-align: center;">
+			<a href="qualifications.html" style="font-weight:bold; text-decoration:underline;">Prev Page</a>
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Site Links&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<a href="websitesurvey.html" style="font-weight:bold; text-decoration:underline;">Next Page</a>
+			</h2>
+			<ul id="footernav" style="color:gold; list-style-type:square; font-size:120%;">
+				<li><a href="black.html">Black &gt; My First Favorite Color</a></li>
+				<li><a href="colorchart.html">Color Chart</a></li>
+				<li><a href="crimson.html">Crimson &gt; My Third Favorite Color</a></li>
+				<li><a href="gold.html">Gold &gt; My Second Favorite Color</a></li>
+				<li><a href="intro.html">Intro</a></li>
+				<li><a href="imagemap.html">Image Map</a></li>
+				<li><a href="sitemap.html">Sitemap</a></li>
+			</ul>
+		</div>
+		<!--FOOTER: PERSONAL INFO-->
+		<div id="personalinfo" style="margin-top:3160px;">
+			<strong>Brandy Nguyen
+			<br/>bnguyen11&#64;neiu.edu</strong>
+			<br/>CS300 Spring 2023
+		</div>
+	</div>
+	</body>
+</html>
